@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. & V. d.o.o.</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3b2c1e; /* tamno smeđa */
+            color: #f5f0eb; /* svijetlo bež za kontrast */
+            font-size: 22px; /* veliki tekst */
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h1, h2, h3 {
+            color: #f5e7d7;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(35, 21, 10, 0.75);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 80%;
+        }
+
+        .two-columns {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .two-columns img {
+            width: 500px;
+            border-radius: 12px;
+        }
+
+        .services, .advantages, .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-block {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .contact-block img {
+            width: 600px;
+            border-radius: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin-top: 40px;
+        }
+
+        input, textarea {
+            padding: 18px;
+            font-size: 20px;
+            border-radius: 8px;
+            border: none;
+            background: #f1e6d8;
+            color: #3b2c1e;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 22px;
+            background: #6b4b33;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #8a6344;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. GLAVNI EKRAN -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>G. & V. d.o.o.</h1>
+        <h2>Vaš pouzdani partner u poslovnoj podršci, strateškom marketingu i savjetovanju u nekretninama.  
+            Naš pristup temelji se na dubinskoj analizi, personaliziranim rješenjima i stvaranju dugoročnih vrijednosti za klijente.</h2>
+    </div>
+</section>
+
+<!-- 2. O NAMA -->
+<section>
+    <h2>🔎 Tko Stoji Iza G. & V. d.o.o.?</h2>
+    <div class="two-columns">
+        <div>
+            <p>
+                G. & V. d.o.o. je tvrtka posvećena unapređenju poslovanja kroz sustavne, analitičke i kreativne metode rada. 
+                Spoj iskustva u poslovnom savjetovanju, modernog marketinga i poznavanja tržišta nekretnina omogućuje nam da pružimo rješenja 
+                koja su jasna, učinkovita i prilagođena specifičnim potrebama klijenta.  
+                Naš cilj je osigurati stabilan rast, bolju vidljivost i strateške uvide koji vode do pametnijih poslovnih odluka.  
+                Svakom projektu pristupamo osobno, profesionalno i s dubokim razumijevanjem lokalnog tržišta.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="O nama">
+    </div>
+</section>
+
+<!-- 3. SERVISI -->
+<section>
+    <h2>📌 Što Radimo – Naše Ključne Usluge</h2>
+    <div class="services">
+        <div>
+            <h3>Business Support Services</h3>
+            <p>Pomažemo tvrtkama optimizirati procese, organizirati radne tokove i donijeti kvalitetnije odluke temeljem podataka. 
+               Naša podrška omogućuje poduzetnicima da se fokusiraju na rast, dok mi brinemo o operativnim detaljima.  
+               Radimo brzo, precizno i usklađeno s poslovnim ciljevima klijenata.</p>
+        </div>
+        <div>
+            <h3>Marketing & Strategija</h3>
+            <p>Kreiramo marketinške strategije koje naglašavaju identitet brenda i dopiru do prave publike.  
+               Kombiniramo digitalne alate i kreativni sadržaj kako bismo izgradili snažnu prisutnost na tržištu.  
+               Naš cilj je povećanje vidljivosti, konverzija i dugoročne lojalnosti.</p>
+        </div>
+        <div>
+            <h3>Real Estate Consulting</h3>
+            <p>Nudimo dubinsku analizu tržišta, savjetovanje i podršku pri investicijama u nekretnine.  
+               Pomažemo klijentima da prepoznaju prave prilike, smanje rizike i ostvare stabilan povrat.  
+               Naš pristup je stručan, transparentan i u potpunosti prilagođen potrebama investitora.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. PREDNOSTI -->
+<section>
+    <h2>⭐ Zašto Izabrati Upravo Nas?</h2>
+    <div class="advantages">
+        <div>
+            <h3>Individualni Pristup</h3>
+            <p>Svaki projekt je jedinstven – zato rješenja prilagođavamo specifičnim potrebama i ciljevima vašeg poslovanja.</p>
+        </div>
+        <div>
+            <h3>Strateško Razmišljanje</h3>
+            <p>Uz dubinsku analizu i iskustvo donosimo preporuke koje dugoročno poboljšavaju rezultate i stabilnost poslovanja.</p>
+        </div>
+        <div>
+            <h3>Brza i Pouzdana Podrška</h3>
+            <p>Oslanjamo se na profesionalnost, transparentnost i dostupnost kako bismo osigurali da svaki klijent dobije vrhunsku uslugu.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. NAŠ PROCES -->
+<section>
+    <h2>🔧 Kako Radimo – Naš Proces Suradnje</h2>
+    <div class="process">
+        <div>
+            <h3>1. Analiza i Razumijevanje</h3>
+            <p>Prvo proučavamo ciljeve, izazove i tržište kako bismo postavili temelj za kvalitetno rješenje.</p>
+        </div>
+        <div>
+            <h3>2. Razvoj Strategije</h3>
+            <p>Kreiramo jasne i mjerljive korake koji vode prema željenim rezultatima – bilo u marketingu, poslovanju ili investicijama.</p>
+        </div>
+        <div>
+            <h3>3. Implementacija i Praćenje</h3>
+            <p>Provodimo plan, pratimo rezultate i kontinuirano poboljšavamo strategiju kako bismo osigurali maksimalni učinak.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. KONTAKTI -->
+<section class="contact-block">
+    <div>
+        <h2>📩 Želite Suradnju s Nama?</h2>
+        <p>
+            Slobodno nam se javite putem e-pošte – rado ćemo odgovoriti na sva pitanja i predložiti najbolji smjer za vaš projekt.  
+            Vjerujemo u otvorenu komunikaciju i partnerski pristup koji donosi stvarne rezultate.  
+            Vaš uspjeh naš je prioritet.
+        </p>
+        <p><strong>Email:</strong> box@gv-doo.pro</p>
+        <p><strong>Adresa:</strong> Selina 61, Selina 52448</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Kontakt">
+</section>
+
+<!-- 7. KONTAKTNA FORMA -->
+<section>
+    <h2>📨 Pošaljite Nam Poruku</h2>
+    <p>Rado ćemo vas kontaktirati u najkraćem mogućem roku. Ispunite obrazac i započnimo suradnju.</p>
+
+    <form>
+        <input type="text" placeholder="Vaše ime" required>
+        <input type="email" placeholder="Vaša e-pošta" required>
+        <textarea rows="5" placeholder="Vaša poruka" required></textarea>
+        <button type="submit">Pošalji</button>
+    </form>
+</section>
+
+</body>
+</html>
